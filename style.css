@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Red+Hat+Display:wght@400;500;700;900&display=swap');
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%); 
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--Pale-blue);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.05);
+    width: 410px;
+    height: 638px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+.hero_img{
+    
+    border-radius: 10px 10px 0 0;
+    width: inherit;
+
+}
+
+h1{
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+}
+p, a{ 
+    font-size: 16px;
+}
+
+#p1{
+    text-align: center;
+    margin: 0.5rem 2rem;
+    color: var(--Desaturated-blue);
+    margin-bottom: 3rem;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+.row1{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100px;
+}
+#music{
+    width: 60px;
+    height: 60px;
+}
+#plan{
+    font-weight: 900;
+    margin: 0 0 0 0.5rem;
+}
+#price{
+    color: var(--Desaturated-blue);
+    margin: 0 0 0 0.5rem;
+}
+a:hover{
+    text-decoration: none;
+    color: var(--Bright-blue);
+}
+.aBtn{
+    background-color: var(--Bright-blue);
+    color: white;
+    font-weight: 700;
+    width: 280px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: none;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+.aBtn:hover{
+    background-color: hsl(245, 75%, 65%);
+}
+.bBtn{
+    color: var(--Desaturated-blue);
+    background-color: white;
+    font-weight: 500;
+    border-style: none;
+    margin: none;
+    cursor: pointer;
+}
+.bBtn:hover{
+    color: hsl(223, 47%, 13%);
+}
+
+@media (max-width: 375px){
+    .container{
+        width: 310px;
+        height: 530px;
+    }
+    .col p{
+    
+    }
+
+
+}
