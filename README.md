@@ -19,6 +19,8 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
+Order summary card solution
+
 
 ### The challenge
 
